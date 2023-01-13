@@ -1,10 +1,12 @@
 <template>
   <div class="flex flex-col h-full bg-black">
+    <Navbar />
     <div class="fixed inset-0 flex justify-center overflow-x-hidden sm:px-8 customScrollbar">
       <div class="flex justify-center w-full max-w-7xl lg:px-8">
         <div class="flex justify-center w-full h-fit">
           <div
             class="flex flex-col justify-between w-full h-full pt-24 mx-4 my-12 ring-2 bg-zinc-900 ring-zinc-300/20 rounded-xl customSize">
+            <!-- tout ce qui est au-dessus est le layout pour toutes les pages -->
             <NuxtPage />
           </div>
         </div>
