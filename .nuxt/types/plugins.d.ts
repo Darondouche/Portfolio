@@ -8,8 +8,7 @@ type InjectionType<A extends Plugin> = A extends Plugin<infer T> ? Decorate<T> :
 type NuxtAppInjections = 
   InjectionType<typeof import("../components.plugin").default> &
   InjectionType<typeof import("../../node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin").default> &
-  InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/router").default> &
-  InjectionType<typeof import("../../../../../../.vscode/extensions/vue.volar-1.0.24-darwin-x64/dist/preview-bin/nuxi/plugin").default>
+  InjectionType<typeof import("../../node_modules/nuxt/dist/pages/runtime/router").default>
 
 declare module '#app' {
   interface NuxtApp extends NuxtAppInjections { }
