@@ -1,5 +1,6 @@
 <template>
-    <div class="text-red-500">
-        index 
+    <div>
+      <HomeHero />
+      <HomeImages />
     </div>
-</template>
+  </template>
