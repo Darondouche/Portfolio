@@ -1,5 +1,5 @@
 <template>
     <div class="text-red-500">
-        prout 
+        index 
     </div>
 </template>
